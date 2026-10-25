@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="GTV Play, la plataforma digital de GTV Medios. Televisión, radio y contenidos para ti.">
+  <title>GTV Play | GTV Medios</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #080b16;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 6%;
+      background: #101629;
+      border-bottom: 1px solid #273149;
+    }
+    .brand { font-size: 25px; font-weight: 800; }
+    .brand span { color: #35a8ff; }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 65px 6% 55px;
+      background: linear-gradient(120deg, #142c55, #101629 65%, #19203d);
+    }
+    .tag {
+      color: #72c6ff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+    h1 { font-size: clamp(36px, 6vw, 64px); margin: 16px 0; }
+    .hero p { color: #d0d9eb; line-height: 1.7; max-width: 560px; }
+    .section { padding: 30px 6%; }
+    .section h2 { font-size: 23px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #141c30;
+      border: 1px solid #283550;
+      border-radius: 14px;
+      padding: 23px;
+      min-height: 155px;
+    }
+    .symbol { font-size: 30px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #b6c2d8; font-size: 14px; line-height: 1.6; }
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 11px 17px;
+      border-radius: 8px;
+      background: #1687ef;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 35px;
+      padding: 26px 6%;
+      border-top: 1px solid #273149;
+      color: #aab5ca;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">GTV <span>PLAY</span></div>
+    <a href="#contenido">Explorar contenido</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="tag">GTV MEDIOS PRESENTA</div>
+      <h1>Todo lo que te gusta,<br>en un solo lugar.</h1>
+      <p>
+        Disfruta televisión, emisoras, noticias y contenidos
+        digitales desde tu celular, computador o televisor.
+      </p>
+      <a class="button" href="#television">Explorar GTV Play</a>
+    </section>
+
+    <section class="section" id="contenido">
+      <h2>Explora GTV Play</h2>
+      <div class="cards">
+        <article class="card" id="television">
+          <div class="symbol">📺</div>
+          <h3>Televisión en vivo</h3>
+          <p>Accede a nuestros canales y disfruta de la programación.</p>
+          <a class="button" href="https://new.opencaster.com/player/embed?user=gamarratv" target="_blank" rel="noopener">Ver Gamarra TV</a>
+        </article>
+
+        <article class="card" id="radio">
+          <div class="symbol">📻</div>
+          <h3>Emisoras online</h3>
+          <p>Descubre música, información y compañía durante el día.</p>
+          <a class="button" href="https://djp.sytes.net/hls/vallenateandoradio/live.m3u8" target="_blank" rel="noopener">Escuchar Vallenateando</a>
+        </article>
+
+        <article class="card" id="noticias">
+          <div class="symbol">📰</div>
+          <h3>Noticias</h3>
+          <p>Infórmate sobre la actualidad y lo que ocurre en la región.</p>
+          <a class="button" href="https://www.facebook.com/GamarraTelvision" target="_blank" rel="noopener">Ver publicaciones</a>
+        </article>
+
+        <article class="card" id="programacion">
+          <div class="symbol">🎬</div>
+          <h3>Programación</h3>
+          <p>Muy pronto podrás consultar los programas y sus horarios.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>GTV Play</strong> · Señal exclusiva de GTV Medios.<br>
+    Entretenimiento, información y comunicación digital.<br>
+    © 2026 GTV Medios. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
