@@ -1,0 +1,14 @@
+GTV PLAY - PAQUETE INICIAL
+
+1) Descomprime y sube los archivos al repositorio GitHub gtv-play.
+2) Duplica config.js.example y nómbralo config.js.
+3) En config.js introduce Project URL y la clave pública publishable/anon de Supabase.
+   NO uses service_role ni claves secretas en el navegador.
+4) En Supabase > SQL Editor ejecuta supabase-schema.sql UNA sola vez. Si ya ejecutaste el SQL que te compartí en el chat, no lo repitas.
+5) Crea el usuario en Supabase > Authentication > Users.
+6) Dale rol de administrador desde SQL Editor con:
+   update public.profiles set rol='admin' where id=(select id from auth.users where email='TU_CORREO');
+   Sustituye TU_CORREO por el correo exacto del usuario.
+7) Sube config.js a GitHub para que Vercel lo publique. La clave anon/publishable es pública; la seguridad depende de RLS. Nunca publiques service_role.
+
+El panel ya tiene inicio de sesión y gestión básica de altas, edición y eliminación para los módulos incluidos. Esta primera entrega usa URLs públicas para imágenes y señales; la subida directa a Supabase Storage, páginas de detalle SEO, reproductor universal y funciones avanzadas se implementan en la siguiente etapa.
